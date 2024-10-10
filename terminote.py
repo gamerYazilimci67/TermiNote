@@ -9,7 +9,8 @@ if not os.path.exists(notes_folder):
     os.makedirs(notes_folder)
 
 if len(sys.argv) != 2:
-    print("Usage: python terminote.py <option>")
+    print("Usage on Windows: python terminote.py <option>")
+    print("Usage on Linux: terminote <option>")
 else:
     command = sys.argv[1]
     if command == "create":
