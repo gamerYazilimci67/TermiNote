@@ -16,8 +16,16 @@ Terminal Based Note App
 - View Your Notes
  Secure your work in the terminal by viewing the notes you created with the ``show`` command. Remember and do not make mistakes.
 
+- Edit Your Notes
+ Did you misspell or write something in your note? Or do you want to change or edit something? You can edit it however you want 
+ with the ``edit`` command! Even by looking at the old text.
+
+- Rename Your Notes
+ Now you can change the name of your note as you wish with the ``rename`` command.
+
 - Delete Your Notes
  You can delete old and unnecessary notes with the ``delete`` command.
+
 
 ## How to run?
 If you run ``linuxsetup.sh`` on Linux, you can run with this command: ``terminote <option>``
