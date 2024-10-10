@@ -1,5 +1,5 @@
 # TermiNote
-Terminal Based Note App
+Terminal based note app for terminal users.
 
 ## How to download?
 
