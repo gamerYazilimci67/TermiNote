@@ -16,16 +16,21 @@ else:
     if command == "create":
         not_name = input("Not name: \n> ")
         not_value = input("Not contents: \n> ")
+        not_tags = input("Not tags(optional): \n> ")
         not_file_name = notes_folder + not_name + ".txt"
         with open(not_file_name,"w") as not_file:
-          not_file.write(not_value)
+          not_file.write(not_tags + "\n" + not_value)
         print(f"Note is succesfully created at: {not_file_name}")
     elif command == "show":
         not_name = input("Not name: \n> ")
         not_file_name = notes_folder + not_name + ".txt"
         with open(not_file_name,"r") as not_file:
-            note = not_file.read()
+            lines = not_file.readlines()
+            note = [line.strip() for line in lines[1:]]
             print(note)
+            note_tag  = lines[0].strip()
+            if note_tag == "": note_tag = "No note tags is found."
+            print(f"Tags: {note_tag}")
     elif command == "delete":
         not_name = input("Not name: \n> ")
         not_file_name = notes_folder + not_name + ".txt"
@@ -56,6 +61,15 @@ else:
             print("Note is succesfully renamed.")
         except Exception as e:
             print(f"Error: {e}")
+    elif command == "search":
+        search_value = input("Not name: \n > ") + ".txt"
+        note_lists = os.listdir(notes_folder)
+        if search_value in note_lists:
+            print(f"Note is founded: {notes_folder + search_value}")
+        else:
+            print("Note isn't founded.")
+    elif command == "list":
+        print(os.listdir(notes_folder))
     else:
         print(f"Unknown command: {sys.argv[1]}")
 
