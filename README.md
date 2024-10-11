@@ -15,29 +15,30 @@ You can download it from Releases.
 
 ## What can be done?
 
-- Create a Note
- Create notes in the folder you are in with the ``create`` command and use these notes while working in the terminal.
+### Create a Note
+  
+Create notes in the folder you are in with the ``create`` command and use these notes while working in the terminal.
 
-- Add Tags Your Notes
+### Add Tags Your Notes
  Now, you can add tags your notes in ``create`` command.
 
-- View Your Notes
+### View Your Notes
  Secure your work in the terminal by viewing the notes you created with the ``show`` command. Remember and do not make mistakes.
 
-- Edit Your Notes
+### Edit Your Notes
  Did you misspell or write something in your note? Or do you want to change or edit something? You can edit it however you want 
  with the ``edit`` command! Even by looking at the old text.
 
-- Rename Your Notes
+### Rename Your Notes
  Now you can change the name of your note as you wish with the ``rename`` command.
 
-- Search Your Notes
+### Search Your Notes
   You can search your notes with the ``search`` command.
 
-- List Your Notes
+### List Your Notes
   List your notes with ``list`` command.
 
-- Delete Your Notes
+### Delete Your Notes
  You can delete old and unnecessary notes with the ``delete`` command.
 
 
