@@ -4,6 +4,8 @@ Terminal based note app for terminal users.
 
 # TermiNote 2.0 is available for download!
 
+You can download it from Releases.
+
 ## How to download?
 
 - Windows
