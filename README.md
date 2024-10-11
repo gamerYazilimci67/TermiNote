@@ -1,5 +1,7 @@
-# TermiNote
+# TermiNote 
 Terminal based note app for terminal users.
+
+# TermiNote 2.0 is available for download!
 
 ## How to download?
 
