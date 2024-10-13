@@ -2,6 +2,7 @@
 #!/usr/bin/env/ python3 
 import sys
 import os
+import shutil
 
 notes_folder = "notes/"
 
@@ -18,13 +19,13 @@ else:
         not_value = input("Not contents: \n> ")
         not_tags = input("Not tags(optional): \n> ")
         not_file_name = notes_folder + not_name + ".txt"
-        with open(not_file_name,"w") as not_file:
+        with open(not_file_name,"w",encoding="UTF-8") as not_file:
           not_file.write(not_tags + "\n" + not_value)
         print(f"Note is succesfully created at: {not_file_name}")
     elif command == "show":
         not_name = input("Not name: \n> ")
         not_file_name = notes_folder + not_name + ".txt"
-        with open(not_file_name,"r") as not_file:
+        with open(not_file_name,"r",encoding="UTF-8") as not_file:
             lines = not_file.readlines()
             note = [line.strip() for line in lines[1:]]
             print(note)
@@ -43,10 +44,10 @@ else:
         not_name = input("Not name: \n> ")
         not_file_name = notes_folder + not_name + ".txt"
         try:
-            with open(not_file_name, "r") as not_file:
+            with open(not_file_name, "r",encoding="UTF-8") as not_file:
                 note = not_file.read()
                 print("Old Text: ",note)
-            with open(not_file_name, "w") as not_file:
+            with open(not_file_name, "w",encoding="UTF-8") as not_file:
                 edited_note = input("Edited(New) Text: ")
                 not_file.write(edited_note)
             print("Note is succesfully edited.")
@@ -70,6 +71,21 @@ else:
             print("Note isn't founded.")
     elif command == "list":
         print(os.listdir(notes_folder))
+    elif command == "export":
+        try:
+            not_name = input("Not name: \n > ")
+            not_file_name = notes_folder + not_name + ".txt"
+            export_path = input("Path to export: \n > ")
+            shutil.copy(not_file_name, export_path)
+        except Exception as e:
+            print(f"Error: {e}")
+    elif command == "import":
+        try:
+            import_path = input("Path to import: \n > ")
+            shutil.copy(import_path, "./notes")
+        except Exception as e:
+            print(f"Error: {e}")
+            
     else:
         print(f"Unknown command: {sys.argv[1]}")
 
