@@ -6,7 +6,7 @@ Terminal based note app for terminal users.
 
 You can download it from Releases. 
 
-> *Warning: If you use v2.0 or v2.1 ``linuxsetup.sh`` is not working. This file is deleted in latest version.(v2.3)
+> *Warning: If you use v2.0 or v2.1 ``linuxsetup.sh`` is not working. This file is deleted in latest version.(v2.3)*
 
 ## How to download?
 
