@@ -2,16 +2,24 @@
 # TermiNote 
 Terminal based note app for terminal users.
 
-# TermiNote 2.0 is available for download!
+# TermiNote 2.3 is available for download!
 
-You can download it from Releases.
+You can download it from Releases. 
+
+> *Warning: If you use v2.0 or v2.1 ``linuxsetup.sh`` is not working. This file is deleted in latest version.(v2.3)
 
 ## How to download?
 
-- Windows:
-  You can download ``terminote.py`` and run this.
-- Linux:
-  You can download ``terminote.py`` and ``linuxsetup.sh``. Run ``linuxsetup.sh`` and run this command: ``terminote <option>`` or run ``terminote.py``
+You can download latest version from Releases.
+
+## How to run?
+
+You can run with this command:  ``python terminote.py <option>``
+
+## How to run in other folders?
+
+You can copy ``terminote.py`` to folder where you working. And you run.(If you don't know how to run this. Please
+read the *How to run?*)
 
 ## What can be done?
 
@@ -50,10 +58,9 @@ Create notes in the folder you are in with the ``create`` command and use these 
 ## Other News:
   - Now, TermiNote use ``UTF-8`` for encoding to notes.
   - ``import`` and ``export`` commands use ``shutil`` library. Therefore ``shutil`` library is import to project.
+  - In update v2.3, TermiNote commands is a cyan. But error colors is red. Therefore ``colorama`` library is import to project.
+  - ``linuxsetup.sh`` is deleted in new version. Because is not working.
 
 ## Warnings:
 > This project is using "GNU GENERAL PUBLIC LICENSE"!
 
-## How to run?
-If you run ``linuxsetup.sh`` on Linux, you can run with this command: ``terminote <option>``
-Else, you can run  with this command:  ``python terminote.py <option>``(This command can run in Windows)
