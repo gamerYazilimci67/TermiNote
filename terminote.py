@@ -3,8 +3,6 @@ import os
 import shutil
 from colorama import Fore
 
-init()
-
 notes_folder = "notes/"
 
 if not os.path.exists(notes_folder):
