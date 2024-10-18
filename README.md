@@ -2,11 +2,9 @@
 # TermiNote 
 Terminal based note app for terminal users.
 
-# TermiNote 2.3 is available for download!
+# TermiNote 2.5 is available for download!
 
 You can download it from Releases. 
-
-> *Warning: If you use v2.0 or v2.1 ``linuxsetup.sh`` is not working. This file is deleted in latest version.(v2.3)*
 
 ## How to download?
 
@@ -46,20 +44,31 @@ Create notes in the folder you are in with the ``create`` command and use these 
 ### List Your Notes
   List your notes with ``list`` command.
 
-### Import Your Files/Notes:
+### Import Your Files/Notes
   You can import your files or notes with ``import`` command.
 
-### Export Your Notes:
+### Export Your Notes
   You can export your notes with ``export``command.
 
 ### Delete Your Notes
  You can delete old and unnecessary notes with the ``delete`` or ``remove`` command.
 
+### Change Note File Format
+ You can change file format with ``settings`` command or you can directly edit ``config.ini`` .(.*)
+
 ## Other News:
-  - Now, TermiNote use ``UTF-8`` for encoding to notes.
-  - ``import`` and ``export`` commands use ``shutil`` library. Therefore ``shutil`` library is import to project.
-  - In update v2.3, TermiNote commands is a cyan. But error colors is red. Therefore ``colorama`` library is import to project.
-  - ``linuxsetup.sh`` is deleted in new version. Because is not working.
+  - Added config file(.ini)
+  - Added ``configparser`` library for parsing the config file.
+  - Now, you change the note file format. (.txt, .md, oth.) 
+  - Now, note tags is not writing head the note, they writing end the note.
+
+## Imported libraries in project:
+- sys
+- os
+- shutil
+- colorama
+- configparser
+
 
 ## Warnings:
 > This project is using "GNU GENERAL PUBLIC LICENSE"!
