@@ -53,7 +53,7 @@ Create notes in the folder you are in with the ``create`` command and use these 
   You can export your notes with ``export``command.
 
 ### Delete Your Notes
- You can delete old and unnecessary notes with the ``delete`` command.
+ You can delete old and unnecessary notes with the ``delete`` or ``remove`` command.
 
 ## Other News:
   - Now, TermiNote use ``UTF-8`` for encoding to notes.
